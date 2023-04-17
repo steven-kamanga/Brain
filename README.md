@@ -28,7 +28,7 @@ AI Dev. Tools is an AI-powered mobile application that provides solutions for de
 
 ## Contributing
 
-- Contributions are welcome! If you have any suggestions or feature requests, please open an issue or submit a pull request. For more information, see CONTRIBUTING.md.
+- Contributions are welcome! If you have any suggestions or feature requests, please open an issue or submit a pull request. For more information, see [Contributing](./CONTRIBUTING.md).
 
 ## License
 
