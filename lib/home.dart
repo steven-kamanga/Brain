@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'app/screens/landing.dart';
 
 class Home extends StatelessWidget {
