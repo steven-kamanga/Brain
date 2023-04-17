@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_user_agentx/flutter_user_agent.dart';
-import 'package:gpt3_webview/gpt.dart';
-import 'package:gpt3_webview/phind.dart';
+import 'package:gpt3_webview/app/screens/gpt.dart';
+import 'package:gpt3_webview/app/screens/phind.dart';
+import '../../constatnts/constants.dart';
 
 class Landing extends StatefulWidget {
   const Landing({super.key});
@@ -27,6 +28,11 @@ class _LandingState extends State<Landing> {
   }
 
   @override
+  void dispose() {
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.black,
@@ -35,25 +41,27 @@ class _LandingState extends State<Landing> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const Center(
-            child: Text("AI Dev. Tools",
+            child: Text(AppStrings.heading,
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 30,
+                  fontSize: FontSize.fs20,
                   fontWeight: FontWeight.bold,
                 )),
           ),
           const SizedBox(
-            height: 20,
+            height: AppPadding.ap20,
           ),
           Column(
             children: [
               Center(
                 child: Container(
-                  height: 40,
-                  width: 130,
+                  height: AppSize.as40,
+                  width: AppSize.as130,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(
+                      AppPadding.ap10,
+                    ),
                   ),
                   child: Center(
                     child: InkWell(
@@ -71,10 +79,10 @@ class _LandingState extends State<Landing> {
                         );
                       },
                       child: const Text(
-                        "Chat Gpt",
+                        AppStrings.chatGpt,
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 14,
+                          fontSize: FontSize.fs14,
                           fontWeight: FontWeight.bold,
                         ),
                       ),
@@ -83,15 +91,17 @@ class _LandingState extends State<Landing> {
                 ),
               ),
               const SizedBox(
-                height: 10,
+                height: AppSize.as10,
               ),
               Center(
                 child: Container(
-                  height: 40,
-                  width: 130,
+                  height: AppSize.as40,
+                  width: AppSize.as130,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(10),
+                    borderRadius: BorderRadius.circular(
+                      AppPadding.ap10,
+                    ),
                   ),
                   child: Center(
                     child: InkWell(
@@ -109,10 +119,10 @@ class _LandingState extends State<Landing> {
                         );
                       },
                       child: const Text(
-                        "Phind",
+                        AppStrings.phind,
                         style: TextStyle(
                           color: Colors.black,
-                          fontSize: 14,
+                          fontSize: FontSize.fs14,
                           fontWeight: FontWeight.bold,
                         ),
                       ),

@@ -1,23 +1,28 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class Gpt extends StatefulWidget {
+import '../../constatnts/constants.dart';
+
+class Phind extends StatefulWidget {
   final String userAgent;
-  const Gpt({Key? key, required this.userAgent}) : super(key: key);
+  const Phind({Key? key, required this.userAgent}) : super(key: key);
 
   @override
-  State<Gpt> createState() => _GptState();
+  State<Phind> createState() => _PhindState();
 }
 
-class _GptState extends State<Gpt> {
-  String url = 'https://chat.openai.com/';
+class _PhindState extends State<Phind> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
         body: SafeArea(
           child: InAppWebView(
-            initialUrlRequest: URLRequest(url: Uri.parse(url)),
+            initialUrlRequest: URLRequest(
+              url: Uri.parse(
+                Constants.phindUrl,
+              ),
+            ),
             initialOptions: InAppWebViewGroupOptions(
               crossPlatform: InAppWebViewOptions(
                 userAgent: widget.userAgent,
