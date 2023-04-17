@@ -10,7 +10,7 @@
 
 
    <application
-        android:label="gpt3_webview"
+        android:label="brain"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

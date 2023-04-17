@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_inappwebview/flutter_inappwebview.dart';
 
-class Home extends StatefulWidget {
+class Phind extends StatefulWidget {
   final String userAgent;
-  const Home({Key? key, required this.userAgent}) : super(key: key);
+  const Phind({Key? key, required this.userAgent}) : super(key: key);
 
   @override
-  State<Home> createState() => _HomeState();
+  State<Phind> createState() => _PhindState();
 }
 
-class _HomeState extends State<Home> {
-  String url = 'https://chat.openai.com/';
+class _PhindState extends State<Phind> {
+  String url = 'https://www.phind.com/';
   @override
   Widget build(BuildContext context) {
     return SafeArea(
