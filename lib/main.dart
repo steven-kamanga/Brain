@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:gpt3_webview/landing.dart';
+import 'package:brain/landing.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(
+    const MyApp(),
+  );
 }
 
 class MyApp extends StatelessWidget {
