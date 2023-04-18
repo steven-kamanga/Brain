@@ -2,7 +2,7 @@
 
 ## Overview
 
-AI Dev. Tools is an AI-powered mobile application that provides solutions for developers such as ChatGPT and Phind AI. The app is built using the Flutter framework and uses the following plugins:
+AI Dev. Tools is an AI-powered mobile application that provides solutions for developers such as ChatGPT and Phind AI. The app is built using the Flutter framework and uses the following packages:
 
 - flutter_inappwebview: ^5.3.2
 - flutter_user_agentx: ^1.2.4
