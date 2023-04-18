@@ -24,8 +24,9 @@ If you have an idea for a new feature in AI Dev. Tools, please open an issue in 
 If you want to contribute code changes to AI Dev. Tools, you'll need to set up a development environment. To do this, follow these steps:
 
 - Clone the AI Dev. Tools repository to your local machine
-- Install any necessary dependencies using npm install
-- Start the development server using npm start
+- Install any necessary dependencies using flutter pub get
+- Start an Android or iOS emulator
+- Start the development server using flutter run -v
 
 ## Submitting code changes
 
@@ -36,7 +37,5 @@ To submit code changes to AI Dev. Tools, please follow these steps:
 - Make your changes and commit them to your branch
 - Push your branch to your GitHub repository
 - Open a pull request in the AI Dev. Tools repository and describe your changes in detail
-
-Please note that all code changes must adhere to our coding standards and be accompanied by unit tests.
 
 Thank you for contributing to AI Dev. Tools!
