@@ -1,6 +1,7 @@
 class Constants {
   static const String chatGptUrl = 'https://chat.openai.com/';
   static const String phindUrl = 'https://www.phind.com/';
+  static const String perplexityUrl = 'https://www.perplexity.ai/';
 }
 
 class AppSize {
@@ -19,6 +20,7 @@ class AppPadding {
 class AppStrings {
   static const String chatGpt = "Chat Gpt";
   static const String phind = "Phind";
+  static const String perplexity = "Perplexity";
   static const String heading = "AI Dev. Tools";
 }
 

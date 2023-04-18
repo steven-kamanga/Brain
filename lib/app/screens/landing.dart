@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_user_agentx/flutter_user_agent.dart';
 import 'package:gpt3_webview/app/screens/gpt.dart';
+import 'package:gpt3_webview/app/screens/perplexity.dart';
 import 'package:gpt3_webview/app/screens/phind.dart';
 import '../../constatnts/constants.dart';
 
@@ -120,6 +121,46 @@ class _LandingState extends State<Landing> {
                       },
                       child: const Text(
                         AppStrings.phind,
+                        style: TextStyle(
+                          color: Colors.black,
+                          fontSize: FontSize.fs14,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(
+                height: AppSize.as10,
+              ),
+              Center(
+                child: Container(
+                  height: AppSize.as40,
+                  width: AppSize.as130,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(
+                      AppPadding.ap10,
+                    ),
+                  ),
+                  child: Center(
+                    child: InkWell(
+                      onTap: () {
+                        setState(() {
+                          userAgent = FlutterUserAgent.userAgent!;
+                        });
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => Perplexity(
+                              userAgent: userAgent,
+                            ),
+                          ),
+                        );
+                      },
+                      child: const Text(
+                        AppStrings.perplexity,
                         style: TextStyle(
                           color: Colors.black,
                           fontSize: FontSize.fs14,
